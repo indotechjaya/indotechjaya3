@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indotech Jaya | Spesialis Mesin Press Industri</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #0d47a1; 
+            --accent-color: #ffab00;  
+        }
+        
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; overflow-x: hidden; }
+        
+        .navbar { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        /* Optimalisasi Mobile untuk Teks Hero */
+        @media (max-width: 768px) {
+            .hero-section h1 { font-size: 2.5rem; }
+            .hero-section p { font-size: 1.1rem; }
+            .hero-section { height: 70vh; }
+        }
+
+        .product-card {
+            border: none;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .product-card:hover { transform: translateY(-10px); }
+
+        .cta-custom {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            font-weight: bold;
+            border-radius: 30px;
+            padding: 12px 25px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-whatsapp:hover { background-color: #128c7e; color: white; }
+
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        footer { background: #1a1a1a; color: white; padding: 50px 0; }
+        
+        /* Memastikan Peta tetap rapi di HP */
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+            border-radius: 10px;
+        }
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">INDOTECH JAYA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container text-center" data-aos="fade-up">
+            <h1 class="display-3 fw-bold">INDOTECH JAYA</h1>
+            <p class="lead">Solusi Mesin Press Berkualitas & Handal Sejak 2013</p>
+            <div class="mt-4 d-grid gap-2 d-md-block">
+                <a href="#produk" class="btn btn-primary btn-lg me-md-2">Lihat Produk</a>
+                <a href="https://wa.me/628xxxxxxxx" class="btn btn-outline-light btn-lg">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light border-bottom">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-4" data-aos="zoom-in">
+                    <h2 class="fw-bold text-primary">2013</h2>
+                    <p class="mb-0">Berpengalaman Sejak</p>
+                </div>
+                <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <h2 class="fw-bold text-primary">100+</h2>
+                    <p class="mb-0">Unit Terpasang</p>
+                </div>
+                <div class="col-12 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <h2 class="fw-bold text-primary px-2">Seluruh Indonesia</h2>
+                    <p class="mb-0">Jangkauan Layanan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produk" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Katalog Mesin Kami</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-4" data-aos="fade-up">
+                    <div class="card product-card h-100">
+                        <img src="mesin1.jpg" class="card-img-top" alt="Mesin Press Rumput Laut">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Mesin Press Rumput Laut</h5>
+                            <p class="card-text text-muted">Didesain khusus untuk pemadatan efisien hasil laut.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card product-card h-100">
+                        <img src="mesin2.jpg" class="card-img-top" alt="Mesin Press Botol">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Mesin Press Botol Plastik</h5>
+                            <p class="card-text text-muted">Solusi tepat untuk industri daur ulang plastik.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card product-card h-100">
+                        <img src="mesin3.jpg" class="card-img-top" alt="Mesin Press Kardus">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Mesin Press Kardus</h5>
+                            <p class="card-text text-muted">Mengurangi volume limbah kardus secara signifikan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up">
+                    <div class="card product-card h-100">
+                        <img src="mesin4.jpg" class="card-img-top" alt="Mesin Press Kaleng">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Mesin Press Semua Jenis Kaleng</h5>
+                            <p class="card-text text-muted">Tekanan tinggi untuk segala jenis limbah logam/kaleng.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card product-card h-100">
+                        <img src="mesin5.jpg" class="card-img-top" alt="Mesin Big Press">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Mesin Big Press</h5>
+                            <p class="card-text text-muted">Unit skala besar untuk kapasitas produksi jumbo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Gallery Dokumentasi Foto & Video</h2>
+            <div class="row g-3 mb-4">
+                <div class="col-6 col-md-3" data-aos="zoom-in"><img src="gallery4.jpg" class="gallery-img" alt="Foto Mesin"></div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="50"><img src="gallery1.jpg" class="gallery-img" alt="Foto Mesin"></div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100"><img src="gallery2.jpg" class="gallery-img" alt="Hasil Produksi"></div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="150"><img src="gallery3.jpg" class="gallery-img" alt="Hasil Produksi"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-12 col-md-6" data-aos="fade-right">
+                    <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Mesin 1" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-left">
+                    <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Mesin 2" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="cta-custom text-center shadow" data-aos="flip-up">
+                <h2 class="fw-bold mb-3">Butuh Mesin Custom?</h2>
+                <p class="lead mb-4">Konsultasikan kebutuhan Anda sekarang dan dapatkan solusi terbaik dari tim kami.</p>
+                <a href="https://wa.me/628xxxxxxxx?text=Halo%20Indotech%20Jaya,%20saya%20ingin%20konsultasi%20mesin%20custom" class="btn btn-whatsapp btn-lg">
+                    <i class="fab fa-whatsapp me-2"></i>Minta Penawaran
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6" data-aos="fade-right">
+                    <h3 class="fw-bold text-primary mb-4">Kontak Kami</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary"></i> Jalan Gatot Subroto Km 2,5, RT.1 RW.1,<br>Cimone, Kota Tangerang, Indonesia 15114</p>
+                    <p class="mb-2"><i class="fas fa-history me-2 text-primary"></i> Berpengalaman sejak Tahun 2013 hingga sekarang</p>
+                    <p><i class="fas fa-check-circle me-2 text-primary"></i> Sudah melayani permintaan mesin seluruh Indonesia ± 100 unit.</p>
+                </div>
+                <div class="col-12 col-md-6" data-aos="fade-left">
+                    <h4 class="fw-bold mb-4">Lokasi Kami</h4>
+                    <div class="map-responsive shadow">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.657!2d106.61!3d-6.18!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTAnNDguMCJTIDEwNsKwMzYnMzYuMCJF!5e0!3m2!1sid!2sid!4v1620000000000" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div class="text-center">
+                <p class="mb-0 text-muted small">© 2026 Indotech Jaya. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
